@@ -93,9 +93,12 @@ sudo reboot
 - Check logs: `journalctl -xe | grep -i wpa`
 - Verify wireless driver: `lspci -k | grep -A3 Network`
 
-## Security Note
+## Other wifis
+```bash
+reboot
+sudo systemctl start NetworkManager
+```
 
-Keep configuration files secure as they contain login credentials.
 ```
 
 This Markdown document provides a concise guide for setting up and persisting your IONIS wireless network configuration. Save this as a `.md` file for future reference. Remember to replace "your_password" with your actual password in the configuration files.
